@@ -19,7 +19,6 @@ public class LottoZad2 {
             }
             userGuesses.add(Integer.parseInt(args[i]));
         }
-
         ArrayList<Integer> randomNumbers = new ArrayList<>();
         Random generator = new Random();
 
