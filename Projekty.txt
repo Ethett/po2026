@@ -31,7 +31,7 @@ Kategoria B: Tematy bardziej techniczne (sieci, systemy, niższy poziom)
 11) Mini Serwer HTTP: Własna implementacja serwera obsługującego żądania GET/POST, routing ścieżek i serwowanie plików statycznych (biblioteka gniazd/Sockets, bez frameworków webowych).
 
 12) Rozproszony Czat Klient-Serwer: Komunikacja wielu klientów przez gniazda sieciowe, pokoje rozmów, obsługa rozłączeń i historii wiadomości.
-
+Hubert Czajkowski, Bartłomiej Kupiec 
 13) Symulator Sieci Komputerowej: Model węzłów i łączy, implementacja prostego algorytmu routingu (np. najkrótsza ścieżka) i wizualizacja przepływu pakietów.
 
 14) Mini Baza Danych typu Key-Value Store: Przechowywanie danych klucz-wartość z indeksowaniem, zapisem trwałym do pliku (Write-Ahead Log) i prostym językiem zapytań.
@@ -89,7 +89,7 @@ Grzegorz Scencelewicz, Bartosz Gąsior
 38) System Planowania Produkcji Filmowej (Call Sheet Manager): Harmonogram zdjęciowy, dostępność aktorów/ekipy, lokacje i zależności między scenami.
 
 39) System Zarządzania Programem Lojalnościowym Wielopoziomowym: Naliczanie punktów z różnych źródeł, progi poziomów, wygasanie punktów i katalog nagród.
-
+Aleksandra Węgrzyn, Magdalena Kowalska
 40) System Ewidencji i Konserwacji Sprzętu Przemysłowego (Maintenance Management): Harmonogram przeglądów prewencyjnych, historia usterek, żywotność części zamiennych.
 
 Kategoria E: Propozycje własne studentów.
@@ -98,3 +98,8 @@ Wiktor Kasprzak, [miejsce wolne]
 (Miejsce na własne tematy - dopiszcie temat i swoje imiona i nazwiska poniżej, zgodnie z zasadami zapisu z README.md)
 
 System Zarządzania Operacjami Płytowymi Lotniska: Miłosz Klasa, Paweł Kulik
+
+
+Gra Symulacyjna Dyspozytorni Komunikacji Miejskiej (DisKrak) : Symulator ruchu w czasie rzeczywistym, zarządzanie flotą i kadrą kierowców z tachografem, kreator przystanków i linii tymczasowych, modularny system wypadków, grywalizacja nastrojów dzielnic, asystent z kartami decyzyjnymi oraz analityka słupkowa - Karol Machnik, Hubert Śliwa
+
+Wektorowa baza danych (Chonker) : baza danych do przechowywania danych różnego rodzaju (tekstu, obrazów, dźwięków itd.) w postaci osadzeń (embedding) w celu łatwiejszego i szybszego wyszukiwania treści, modularność modeli do generowania osadzeń, zarządzanie użytkownikami i uprawnieniami - Piotr Trybała, indywidualnie
