@@ -1,5 +1,8 @@
 package agh.po.lab3;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import static org.junit.Assert.*;
 
 public class CodingBatTest {
@@ -36,5 +39,39 @@ public class CodingBatTest {
         assertEquals("Hello Marcin!", bat.helloName("Marcin"));
 
     }
+    @org.junit.Test
+    public void mapAB2() {
+        assertEquals(
+                Map.of("c", "cake"),
+                bat.mapAB2(new HashMap<>(Map.of("a", "aaa", "b", "aaa", "c", "cake")))
+        );
+        assertEquals(
+                Map.of("a", "aaa", "b", "bbb"),
+                bat.mapAB2(new HashMap<>(Map.of("a", "aaa", "b", "bbb")))
+        );
+        assertEquals(
+                Map.of("a", "aaa", "b", "bbb", "c", "aaa"),
+                bat.mapAB2(new HashMap<>(Map.of("a", "aaa", "b", "bbb", "c", "aaa")))
+        );
+    }
+
+    @org.junit.Test
+    public void wordCount() {
+        assertEquals(
+                Map.of("a", 2, "b", 2, "c", 1),
+                bat.wordCount(new String[]{"a", "b", "a", "c", "b"})
+        );
+
+        assertEquals(
+                Map.of("a", 1, "b", 1, "c", 1),
+                bat.wordCount(new String[]{"c", "b", "a"})
+        );
+
+        assertEquals(
+                Map.of("c", 4),
+                bat.wordCount(new String[]{"c", "c", "c", "c"})
+        );
+    }
+
 }
 

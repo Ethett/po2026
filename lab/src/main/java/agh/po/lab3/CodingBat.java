@@ -1,4 +1,7 @@
 package agh.po.lab3;
+import java.util.HashMap;
+import java.util.Map;
+
 
 public class CodingBat {
     public boolean nearHundred(int n) {
@@ -31,12 +34,44 @@ public class CodingBat {
         return "Hello "+name+"!";
     }
 
+    public Map<String, String> mapAB2(Map<String, String> map) {
+        if (map.containsKey("a") && map.containsKey("b") && map.get("a").equals(map.get("b"))) {
+            map.remove("a");
+            map.remove("b");
+        }
+        return map;
+    }
+
+    public Map<String, Integer> wordCount(String[] strings) {
+        Map<String, Integer> map = new HashMap<>();
+        for (String s : strings) {
+            if (map.containsKey(s)) {
+                int obecnaIlosc = map.get(s);
+                map.put(s, obecnaIlosc + 1);
+            }
+            else {
+                map.put(s, 1);
+            }
+        }
+        return map;
+
+    }
+
+
+
     public static void main(String[] args) {
         CodingBat test = new CodingBat();
+        Map<String, String> mapka = new HashMap<>();
+        mapka.put("a", "aaa");
+        mapka.put("b", "aaa");
+        mapka.put("c", "cake");
+
         System.out.println(test.nearHundred(93));
         System.out.println(test.startOz("ozymandias"));
         System.out.println(test.countEvens(new int[]{1,2,3,6,8}));
         System.out.println(test.helloName("Janusz"));
+        System.out.println(test.mapAB2(mapka));
+
 
     }
 }
